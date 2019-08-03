@@ -1,9 +1,52 @@
-网页搜索：msysgit.github.com，下载git，并进行安装
-配置path：将根目录的bin目录配置到path环境变量
-配置git：桌面右键，会出现git bash，出现黑框
-	黑框中输入：git config --global user.name "zhenghongsheng"
-		    git config --global user.email "1289939493@qq.com"
+网页搜索：
+	msysgit.github.com，下载git，并进行安装
+配置path：
+	将根目录的bin目录配置到path环境变量
+配置git：
+	桌面右键，会出现git bash，出现黑框
+	黑框中输入：
+	git config --global user.name "zhenghongsheng"		    
+	git config --global user.email "1289939493@qq.com"
 	可以在C盘的用户下找到.gitconfig文件
 
 
 托管网站（本地与托管网站进行交互）上注册：github.com
+	如有邮件提示，需要在邮件中点击链接，进行登录操作验证
+配置免密钥登录：本地git输入：ssh-keygen -t rsa -C 1289939493@qq.com，一路回车
+		会在C盘的用户下找到.ssh文件夹，里面有公钥，将公钥的内容拷贝到托管网站中的-setting中
+		然后找到SSH and GPG key中。
+		此操作可能会收到邮件，需要进行验证
+测试本地与远程的连通性：
+ 	ssh -T git@github.com
+会在本地.ssh文件夹中生成known_hosts文件
+
+
+在本地新建项目
+在远程创建项目，生成：git@github.com:zhenghongsheng123/myfirstGit.git
+关联项目：git remote add oragin git@github.com:zhenghongsheng123/myfirstGit.git
+
+
+第一次发布项目
+git add .		//文件---》暂存区
+git commit -m "注释"	//暂存区--》本地分支
+git push -u oragin master	//	
+第一次下载项目
+git clone git@github.com:zhenghongsheng123/myfirstGit.git
+
+更新（远程-本地）
+git add .
+git commit -m "注释"
+gir push oragin master
+
+
+
+
+
+
+
+
+
+
+
+
+
