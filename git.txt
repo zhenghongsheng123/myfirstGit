@@ -1,0 +1,9 @@
+网页搜索：msysgit.github.com，下载git，并进行安装
+配置path：将根目录的bin目录配置到path环境变量
+配置git：桌面右键，会出现git bash，出现黑框
+	黑框中输入：git config --global user.name "zhenghongsheng"
+		    git config --global user.email "1289939493@qq.com"
+	可以在C盘的用户下找到.gitconfig文件
+
+
+托管网站（本地与托管网站进行交互）上注册：github.com
